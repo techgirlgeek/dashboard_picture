@@ -1,0 +1,6 @@
+name = Dashboard Pictures
+description = Dashboard get student pictures
+core = 7.x
+package = OnCampus
+
+dependencies[] = dining_balances
