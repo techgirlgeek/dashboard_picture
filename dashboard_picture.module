@@ -42,10 +42,10 @@ function dashboard_picture_get_picture($pic_path, $name) {
 
 function dashboard_picture_from_starrez($entryid, $uuid) {
 
-  $base_url = variable_get('myroom_starrezz_end_point_url','http://128.138.29.213/starrezrestdevelopment/services/');
-  $authname = variable_get('myroom_starrez_authname','hds\rehabcreative');
-  $pw_raw = variable_get('myroom_starrez_authpw',FALSE);
-  $auth_pw = $pw_raw ? myroom_starrez_ec_dc('decrypt', $pw_raw) : "unset";
+  $base_url = variable_get('referenced_module_end_point_url','http://XXX.XXX.XXX.XXX/starrezrestdevelopment/services/');
+  $authname = variable_get('referenced_module_authname','hds\rehabcreative');
+  $pw_raw = variable_get('referenced_module_authpw',FALSE);
+  $auth_pw = $pw_raw ? referenced_module_ec_dc('decrypt', $pw_raw) : "unset";
 
   $document_root = $GLOBALS['_SERVER']['DOCUMENT_ROOT'];
 
